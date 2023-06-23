@@ -13,13 +13,14 @@ const transporter = nodemailer.createTransport({
     host: 'smtp.ethereal.email',
     port: 587,
     auth: {
-        user: 'luis47@ethereal.email',
-        pass: 'Kj9Af6QFFD3pHJg8PR'
+      user: 'nickolas.adams53@ethereal.email',
+      pass: '16uvAv39rqZyGAx7nm'
+
   }
 });
 
 
-const html =`<a href="https://84a6-2405-201-802b-6809-ecd9-4ea2-9a31-76e3.ngrok-free.app/">Click here to browse to site</a>`;
+const html =`<a href="https://beb2-2405-201-802b-6809-bd87-9a81-f12a-68d.ngrok-free.app/">Click here to browse to site</a>`;
 
 
 const getUserEmails=async()=>{

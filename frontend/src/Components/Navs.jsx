@@ -1,5 +1,7 @@
 import React from 'react'
 import { useAuth0 } from "@auth0/auth0-react";
+import LoginButton from './LoginButton';
+import LogoutButton from './LogoutButton';
 
 
 const Navs = () => {
@@ -18,7 +20,7 @@ const Navs = () => {
 
 <div id="docs-sidebar" className="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden fixed top-0 left-0 bottom-0 z-[60] w-64 bg-indigo-700 border-r border-gray-200 pt-7 pb-10 overflow-y-auto scrollbar-y lg:block lg:translate-x-0 lg:right-auto lg:bottom-0 dark:scrollbar-y dark:bg-gray-800 dark:border-gray-700">
   <div className="px-6">
-    <a className="flex-none text-xl font-semibold dark:text-white" href="javascript:;" aria-label="Brand">Brand</a>
+    <a className="flex-none text-xl font-semibold dark:text-white" href="javascript:;" aria-label="Brand">` Hii ${isAuthenticated?user.name:"User"}`</a>
   </div>
   <nav className="hs-accordion-group p-6 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
     <ul className="space-y-1.5">
@@ -53,6 +55,12 @@ const Navs = () => {
         </svg>
         Documentation
       </a></li>
+
+
+      <li>
+       <LogoutButton style="focus:bg-indigo-600 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 bg-indigo-700 hover:bg-indigo-600 text-white px-10 py-2 font-semibold rounded focus:outline-none w-[150px]"/>
+
+      </li>
     </ul>
   </nav>
 </div>

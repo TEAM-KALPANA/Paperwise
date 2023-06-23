@@ -49,7 +49,7 @@ const Hero = () => {
                 <nav  className="relative z-10 w-full lg:flex justify-between  items-center p-20">
                     <div className="w-1/6">
                         <a>
-                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/right_aligned_with_searchbar_Svg3.svg" alt="logo" />
+                            <img src="https://i.imgur.com/MtjQsSj.jpg" alt="logo" />
                         </a>
                     </div>
                     <div className="w-5/6">

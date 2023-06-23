@@ -95,6 +95,42 @@ try {
 
 
 
+app.post("/new-user",async (req,res)=>{
+const username = req.body.name
+const user1= req.body
+
+try {
+  
+
+const existingUser = await db.collection("UsersInfo").findOne({ name:username })
+console.log(existingUser)
+
+if (existingUser) {
+
+  res.status(200).send({username: existingUser,msg:"already exist"});
+  
+
+}else{
+
+
+  const insertUser = await col.insertOne(user1);
+
+
+res.status(200).send({username: existingUser,msg:"success insertion"});
+
+  
+}
+
+
+
+} catch (error) {
+  res.status(200).send(error);
+
+  console.log(error);
+}
+
+})
+
 
 
 
