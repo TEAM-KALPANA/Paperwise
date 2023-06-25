@@ -1,11 +1,15 @@
 <h1 align="center">Welcome to Paperwise 👋</h1>
 <p> Page wise is a user article recommendation appications that uses smtp server to send emails to users to redirect them to the site for browsing articles of their intrest</p>
 
+## 🔗 Links
+View Live site demo at code demo at : 
+(https://paperwise-application.netlify.app/)
+
 <h1 align="center">Backend Code Setup👋</h1>
 <p>
  Backend is a simple node and Express application server.It is required to create a .env file and provide the detaills of MOngoodb url int it for the mongodb connection
 </p>
-
+12 qas CSDEWQ32
 <p>
   <a href="https://www.npmjs.com/package/backend" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/backend.svg">
@@ -96,7 +100,8 @@ npm run test
 
 <h1 align="center">Frontend Setup👋</h1>
 <p>
- Frontend is build using react.js and uses splingler api to get data of articles
+ Frontend is build using react.js and uses splingler api to get data of articles.Vie live demo at: 
+(https://paperwise-application.netlify.app/)
 </p>
 
 <p>
